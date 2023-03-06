@@ -1,0 +1,915 @@
+/*
+Theme Name: VW Food Corner
+Theme URI: https://www.vwthemes.com/themes/food-wordpress-theme/
+Author: VWthemes
+Author URI: https://www.vwthemes.com
+Description: VW Food is a child theme of VW Restaurant, It is stylish and eye-catching WordPress theme for all the food lovers out there. You can find its application if you run a restaurant, cafe, coffee house, hotel, motel, bakery shop, eatery, food joint, lodge, eating house, hashery, hotdog stand, eating place, fast-food place, greasy spoon, burger stand, barbeque, grill house, cafeteria, cloud kitchen, fine dining, food truck, fast casual, diner, dining room, luncheonette, soda fountain, inn, outlet, canteen, chophouse, pizza parlour or a fast food centre or serves multiple cuisine like Italian, Chinese, Thai food, healthy food, drive-in, hideaway, lunchroom, pizzeria, cafe, doughtnut shop booking a table, cake and Asian cuisine restaurant etc. You can use it for a hospitality business or if you are a food blogger or food critic. This theme has powerful customizer to change its colour, background, images etc. The elegant design of the theme will surely attract people to explore the site. You can personalize this multipurpose theme to use as a blog, professional website or portfolio of food photography. It is fully responsive, cross-browser compatible and translation ready theme which has various slides for different look on every page. It is SEO-friendly and enhances page loading speed. The theme comes with banner, call to action (CTA) button and social media icons integration. The clean and secure code makes it more reliable. The VW Food theme implements short codes which makes it lighter to load and highly customizable.
+Template: vw-restaurant-lite
+Requires at least: 5.0
+Tested up to: 6.1
+Requires PHP: 7.2
+Version: 0.4.4
+License: GPLv3.0 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: vw-food-corner
+Tags:left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, grid-layout, wide-blocks, block-styles, block-patterns, custom-colors, custom-background, custom-logo, custom-menu, custom-header, editor-style, post-formats, flexible-header, featured-images, footer-widgets, sticky-post, buddypress, full-width-template, theme-options, threaded-comments, translation-ready, rtl-language-support, food-and-drink, blog, e-commerce
+*/
+
+/* Default CSS */
+
+html {
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+  font-family: Montserrat ;
+}
+a{
+  color: #fa5853;
+  text-decoration:none !important;
+}
+a:hover{ 
+  text-decoration:none !important;
+  color: #000;
+}
+a:focus{
+  outline: 1px solid #000;
+}
+/*----------------- Topbar ---------------------*/
+.topheader {
+  background: #fa5853;
+  padding: 8px 0;
+}
+span.call, span.email, span.call a, span.email a{
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+span.call a:hover, span.email a:hover{
+  color: #000;
+ }
+hr {
+  margin-top: 20px ;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+hr.top-hr {
+  margin: 0 !important;
+  opacity: 1;
+  color: #fff;
+}
+/*-------------------Menus----------------------*/
+.main-navigation ul{
+  float: left;
+}
+.main-navigation li{
+  display: inline-block;
+  position: relative;
+}
+.main-navigation a:hover{
+  color: #000;
+}
+.main-navigation ul ul ul {
+    left: 100%;
+    top: 0%;
+}
+.main-navigation ul ul {
+    top: 100%;
+    border-top-style: solid;
+    border-top-color: #fa5853;
+    border-bottom-style: solid;
+    border-bottom-color: #fa5853;
+    box-shadow: none;
+}
+.main-navigation a{
+    margin-top: 0px;
+}
+.main-navigation ul.sub-menu a:hover{
+  color: #fa5853;
+  padding-left: 50px !important;
+}
+.header .logo {
+  margin: 0;
+  padding: 10px 10px;
+}
+.header .logo a {
+  font-family: Montserrat;
+}
+p.site-title {
+  margin-bottom: 5px;
+}
+/*---------------slider section----------------*/
+.slider .carousel-control-prev-icon i, .slider .carousel-control-next-icon i {
+    padding: 18px;
+    background-color: #fa5853;
+    color: #fff;
+}
+.slider .more-btn a.button {
+    background: transparent;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fa5853;
+    border: 3px solid #fa5853;
+}
+.slider .more-btn a.button:hover{
+  color: #fff;
+}
+.slider img {
+    opacity: 0.5;
+}
+.slider .inner_carousel h1 a:hover{
+    color: #fa5853;
+}
+/*----------- Services Section-------------- */
+#our-services {
+    text-align: center;
+    background: #f7f7f7;
+}
+#our-services h3 {
+    font-size: 35px;
+    padding: 0;
+    color: #fa5853;
+}
+#our-services img {
+    width: 50%;
+    padding: 18px 0;
+}
+.image-div {
+    width: 194px;
+    height: 110px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 5px solid #000;
+    border-bottom: 0;
+    margin: 0 auto;
+}
+.image-div:hover {
+    background: #fa5853;
+}
+#our-services h4 {
+    font-size: 20px;
+    background:url('images/servicetitlebg.png') no-repeat;
+    margin: 0 auto;
+    color: #fff;
+    background-size: 100% 100%;    
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#our-services p {
+    color: #727272;
+    font-size: 14px;
+}
+.page-box {
+    margin-top: 25px;
+}
+.page-content .read-moresec {
+    margin: 1%;
+}
+/* ----------------We Believe --------------------*/
+a.button {
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    margin: 0;
+    padding: 7px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.we_belive h3 q{
+    color: #000;
+    font-family: Aron Pro Bold Italic;
+} 
+/*----------------- Blog Post--------------- */
+.services {
+    margin: 2% 0 0 0;
+}
+.inner-service{
+    background: #fa58534d;
+}
+.services .section-title a,
+#sidebar th,
+#sidebar td,
+#sidebar caption,
+#sidebar td#prev a, #sidebar td a,
+#sidebar ul li a:hover,
+.nav-previous a:hover, .nav-next a:hover{
+  color: #fa5853 !important;
+}
+.pagination .current,
+.pagination a:hover,
+#sidebar input[type="submit"],
+#sidebar .tagcloud a:hover,
+input[type='submit'],
+.copyright,
+.hvr-sweep-to-right:before,
+#comments input[type="submit"].submit{
+    background: #fa5853;
+}
+.comments input[type="submit"].submit {
+    background: #fa5853;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+}
+.comments input[type="submit"].submit:hover {
+    background: #000;
+    color: #fa5853;
+}
+.comments h2.comments-title {
+    padding: 10px 0 0 0;
+}
+.comments ol li{
+  width:100%;
+  list-style:none;
+  margin: 0 0 20px;
+  padding: 20px;
+  background:#f8f8f8;
+  display:inline-block;
+  border: 1px solid #d6d6d6;
+}  
+.reply {
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
+}
+.comments a.comment-reply-link {
+    color: #fff;
+    background:#fa5853;
+    padding: 5px 15px;
+}
+.comments a.comment-reply-link:hover {
+    color: #000;
+}
+.entry-content a, .sidebar .textwidget p a, .textwidget p a, #comments p a, .slider .inner_carousel p a{
+  color: #fa5853;
+  text-decoration: underline;
+}
+.post-navigation span.meta-nav {
+    margin: 0; 
+}
+.comments h2.comments-title {
+    padding: 10px 0 10px 0;
+}
+.comments ol li{
+  width:100%;
+  list-style:none;
+  margin: 0 0 20px;
+  padding: 20px;
+  background:#f8f8f8;
+  display:inline-block;
+  border: 1px solid #d6d6d6;
+}  
+.reply {
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
+}
+.comments a.comment-reply-link {
+    color: #fff;
+    background:#fa5853;
+    padding: 5px 15px;
+}
+.comments .comment-content{
+    margin-left: 0;
+}
+.date-box, .cat-box {
+    color: #212529;
+}
+.date-box a {
+    color: #212529;
+}
+.date-box a:hover, .single-post .metabox:hover .entry-date a, .single-post .metabox:hover .entry-author a{
+    color: #fa5853 !important;
+}
+.services-box:hover .date-box a {
+    color: #fa5853;
+}
+.new-text p {
+    color: #656565;
+    font-size: 15px;
+}
+.inner-service {
+    padding: 10px 20px;
+}
+.nav-links {
+    margin: 20px 0px 20px 0px;
+}
+.single-post hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.single-post .metabox:hover a{
+  color: #fa5853 !important;
+}
+.single-post .entry-date a, .entry-author a {
+    color: #000 !important;
+}
+input.search-submit:hover, .post-password-form input[type=submit]:hover {
+    background: #000;
+    color: #fa5853;
+}
+.entry-summary a, .entry-content a, .sidebar .textwidget p a, .textwidget p a, #comments p a, .slider .inner_carousel p a {
+    color: #fa5853;
+    text-decoration: underline !important;
+}
+
+/* --------- POST --------- */
+.bradcrumbs{
+  padding:30px 0;
+}
+.bradcrumbs a, .post-categories li a{
+  background:transparent;
+  color: #fa5853;
+  border: 3px solid #fa5853;
+  padding:8px 15px;
+  margin-right:5px;
+  font-weight: 700;
+}  
+.bradcrumbs a:hover ,.post-categories li a:hover{
+  background:#fa5853;
+  color: #000;
+}  
+.bradcrumbs span{
+  background:transparent;
+  color: #fa5853;
+  border: 3px solid #fa5853;
+  padding:8px 15px;
+  font-weight: 700;
+} 
+/*----------------footer------------------*/
+.footer {
+    background: #000;
+}
+.footer aside.widget ul {
+    margin-left: 0px;
+}
+.footer h3{
+    color: #fa5853;
+    border-bottom: 2px solid #fa5853;
+    text-align: left;
+}
+.footer h3.widget-title a.rsswidget{
+    color: #fa5853;
+}
+.copyright a, .copyright p{
+    color: #fff;
+}
+.footer input[type="search"] {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    border: solid 1px #4d4d4d;
+}
+.footer label {
+    width: 95%;
+}
+.footer input[type="submit"] {
+    width: 95%;
+    float: none;
+    font-size: 15px;
+    padding: 10px 8px;
+    font-weight: bold;
+    color: #fff;
+    margin: 1px 0 0 0;
+}
+.footer input[type="submit"]:hover{
+    background: #fa5853;
+}
+.footer table, .footer th, .footer td {
+    border: 1px solid #d1d1d1;
+    text-align: center;
+}
+.footer th {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.footer td {
+    padding: 0px;
+    color: #fff;
+}
+.footer caption {
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+table#wp-calendar {
+    width: 100%;
+}
+.footer .tagcloud a, .sidebar .tagcloud a {
+    background: #eeeeee;
+    color: #000;
+    font-size: 15px !important;
+    padding: 5px 18px;
+    margin: 0 0 5px;
+    display: inline-block;
+}
+.sidebar .tagcloud a:hover, .footer .tagcloud a:hover {
+    background: #fa5853;
+}
+.footer ul li {
+    list-style: none;
+    padding: 5px 0;
+    color: #fff;
+}
+.footer ul li a{
+    color: #fff;
+    font-size: 15px;
+}
+.footer .rssSummary {
+    color: #fff;
+}
+.footer td a{
+    color: #fa5853;
+}
+.copyright .custom-social-icons{
+    margin: 0 !important;
+}
+.copyright{
+    padding: 20px 20px 30px 20px;
+}
+.copyright .custom-social-icons i{
+     color: #fff !important;
+}
+/* Footer Section */
+.scrollup i {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  font-size: 20px;
+  display: none;
+  color: #fff !important;
+  padding: 10px;
+  background: #fa5853;
+  z-index: 999;
+}
+.scrollup.left i{
+  left: 20px;
+}
+.scrollup.center i{
+  left: 50%;
+  right: 50%;
+}
+.copyright a:hover {
+    color: #000;
+}
+.sidebar form.wp-block-search__button-outside.wp-block-search__text-button.wp-block-search{
+  border: none;
+}
+.sidebar .wp-block-search .wp-block-search__label{
+  text-align: left;
+  margin: 0 0 15px !important;
+  padding: 13px 0 0 20px !important;
+  font-size: 20px !important;
+  background: url(images/sidebar-heading-bg.png) no-repeat;
+  color: #fff;
+  background-size: 100% 100%;
+  height: 60px;
+}
+.footer .wp-block-search .wp-block-search__label{
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0 0 24px 0;
+  padding: 0 0 17px 0;
+  color: #fa5853;
+  font-family: Aron Pro Bold Italic;
+  font-weight: 500;
+  color: #fa5853;
+  border-bottom: 2px solid #fa5853;
+  text-align: left;
+}
+.footer .wp-block-search .wp-block-search__inside-wrapper, .sidebar .wp-block-search .wp-block-search__inside-wrapper{
+  flex-wrap: wrap;
+  display: block;
+}
+.footer .wp-block-search .wp-block-search__input, .sidebar .wp-block-search .wp-block-search__input {
+  padding:10px 10px;
+  font-size:15px;
+  margin-bottom: 10px;
+  color:#4d4749;
+  border: solid 1px #e1e1e1;
+  width: 100%;
+}
+.footer .wp-block-search .wp-block-search__button, .sidebar .wp-block-search .wp-block-search__button{
+  background: #fa5853;
+  color: #000;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 100%;
+  margin-left: 0;
+}
+/*----------------sidebar--------------------*/
+.sidebar h3 {
+    background: url(images/sidebar-heading-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.sidebar h3.widget-title a.rsswidget{
+    color: #fff;
+}
+.sidebar ul li a:hover, .footer li a:hover{
+    color: #fa5853;
+}
+.sidebar input[type="search"] {
+    padding: 5px 15px;
+}
+.sidebar input[type="submit"] {
+    background: #fa5853;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    width: 30%;
+    font-size: 14px;
+    float: left;
+    margin: 0;
+    font-weight: bold;
+}
+.sidebar ul li a{
+    color: #000;
+}
+.sidebar ul li {
+    padding: 0 0 0 23px !important;
+}
+/*----------------Social icons-------------------*/
+.footer .custom-social-icons {
+  margin: 0;
+  font-size: 15px;
+  text-align: left;
+}
+.footer .custom-social-icons i {
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+.footer .custom-social-icons i,
+.sidebar .custom-social-icons i {
+  border: 1px solid #fa5853;
+  color: #fa5853;
+  background-color: transparent;
+}
+.sidebar .custom-social-icons i {
+  background-color: #fff;
+}
+.footer .custom-social-icons i:hover,
+.sidebar .custom-social-icons i:hover{
+  background: #fa5853;
+  color: #fff;
+  border-color: #fa5853;
+}
+/* ----------------Header--------------- */
+.header{
+    border-bottom:none;
+    background: #fa5853;
+}
+.social-media i:hover,
+.header .logo a{
+    color: #000;
+}
+.header .logo a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.header .logo .site-title a:hover{
+  color: #212529;
+}
+.custom-social-icons {
+    margin: 20px 0;
+}
+/*------------- About us widgets --------------*/
+.sidebar a.custom_read_more {
+  background: #fa5853;
+}
+.sidebar a.custom_read_more:hover{
+  color: #fa5853;
+  background: #000;
+}
+.custom-about-us p{
+  margin-bottom: 5px;
+}
+.footer a.custom_read_more {
+  background: #fa5853;
+  color: #000;
+  padding: 10px 15px;
+}
+.footer a.custom_read_more:hover{
+  color: #000;
+  background: #fff;
+}
+.footer .more-button{
+  margin: 20px 0px 20px 0px;
+}
+/*------------- Contact us widgets --------------*/
+.custom-contact-us p {
+  padding-bottom: 0px;
+}
+.wpcf7 form input[type="submit"]{
+  padding: 10px 20px;
+  background-color: #fa5853;
+  border-radius: 0px;
+}
+/*--------------Woocommerce-----------------*/
+nav.woocommerce-MyAccount-navigation ul li {
+    background: #fa5853;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    background: #fa5853;
+}
+.woocommerce-message::before {
+    color: #fa5853;
+}
+.woocommerce-message {
+    border-color: #fa5853;
+}
+.woocommerce span.onsale {
+    background: #fa5853;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background: #000;
+    color: #fa5853 !important;
+}
+.widget .woocommerce-product-search button[type="submit"]{
+  background: #fa5853;
+}
+.woocommerce.widget_shopping_cart .cart_list li a.remove{
+  display: none;
+}
+.widget.woocommerce .cart_list li {
+  padding-bottom: 10px !important;
+}
+.woocommerce-privacy-policy-text p{
+  margin: 0 20px 10px 0;
+}
+nav.woocommerce-MyAccount-navigation ul li a {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+.woocommerce a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    font-size: 15px;
+}
+.woocommerce h3#order_review_heading{
+    padding: 20px 0 5px 0;
+}
+nav.woocommerce-MyAccount-navigation ul li a:hover{
+    color: #000;
+}
+.woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover{
+    background: #fa5853;
+}
+.wc-proceed-to-checkout a, .woocommerce-cart table.cart td a{
+    text-decoration: none !important;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+/*----------- PRELOADER ----------*/
+#preloader {
+  background-color: #fa5853;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+  height: 100%;
+}
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap {
+  animation: spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+.loader-line {
+  border: 4px solid #ffffff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  height: 90px;
+  width: 90px;
+  top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  height: 76px;
+  width: 76px;
+  top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  height: 62px;
+  width: 62px;
+  top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  height: 48px;
+  width: 48px;
+  top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  height: 34px;
+  width: 34px;
+  top: 35px;
+}
+@keyframes spin {
+  0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.elementor-page #preloader{
+  display: none;
+}
+/*--------------Media-----------------*/
+@media screen and (max-width: 1000px){
+  .toggle-nav {
+    display: none;
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+    top:0px;
+  }
+  .toggle-nav i {
+    font-size: 25px;
+    color: #fff;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fa5853;
+  }
+  .toggle-nav{
+    display: block;
+  }
+  .main-navigation ul{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center; 
+    margin-top: 0px;
+    float: none;
+  }
+  .main-navigation ul ul li{
+    display: block;
+  }
+  .menubar .nav ul li{
+    border-top:1px #f1f1f1 solid; 
+    display:block;
+  }
+  .main-navigation ul li a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    display: block; 
+    transition: 0.3s;
+    float: none;
+    margin: 5px 0;
+    border-right: none;
+    border-top: 1px solid #f1f1f1;
+  }
+  .main-navigation ul li ul li a:before{
+    content:"\00BB \00a0";
+  }
+  .main-navigation ul.sub-menu a:hover{
+    padding-left:20px !important;
+    background: #fff !important;
+  }
+  .main-navigation ul ul{
+    position: static;
+    width: 100%;
+    background: transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    box-shadow: none;
+  }
+  .main-navigation ul ul a{
+    border-bottom: none;
+    text-align: center;
+    padding-left: 40px;
+  }
+  .main-navigation ul ul ul.sub-menu a{
+    padding-left: 40px;
+  }
+  .main-navigation li{
+    padding: 0;
+    display: block;
+    text-align: center;
+  } 
+  .main-menu {
+    padding: 0em;
+    padding-top: 50px;
+    }
+}
+@media screen and (max-width: 720px){
+  .header .logo p {
+      margin-bottom: 0;
+  }
+  .slider .carousel-caption {
+      top: 40%;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px){
+    .image-div {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 767px){
+    .image-div {
+        width: 150px;
+    }
+    .slider .carousel-caption{
+      top: 45%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 720px){
+    .slider .carousel-caption {
+        top: 45%;
+    }
+}
+@media screen and (max-width: 999px) and (min-width: 768px){
+    .slider .inner_carousel p {
+        display: block;
+        display: none;
+    }
+    .header .logo a{
+        font-size: 20px;
+    }
+    .custom-social-icons {
+        margin: 10px 0;
+    }
+    .toggle-nav {
+        width: auto;
+        text-align: right;
+    }
+}
